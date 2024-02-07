@@ -11,7 +11,9 @@ import SwiftUI
 struct testApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().frame(minWidth:600, idealWidth:600, maxWidth:1920,
+                                minHeight: 400, idealHeight: 400, maxHeight:1080,
+                                alignment:.center)
         }
     }
 }
